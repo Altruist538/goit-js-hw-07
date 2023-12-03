@@ -17,7 +17,7 @@ function onGalleryClick(event) {
   event.preventDefault();
   if (event.target.nodeName !== "IMG") return;
   const instance = basicLightbox.create(`
-    <img src="${event.target.dataset.source}" alt="${event.target.alt}" />
+    <img src="${event.target.dataset.source}" alt="${event.target.alt}" width="800" height="600"/>
   `);
 
   instance.show();
@@ -30,4 +30,3 @@ function onGalleryClick(event) {
     }
   }
 }
-console.log(galleryItems);
